@@ -1,11 +1,12 @@
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
 const App = () => {
   return (
     <div className="App">
-      <Navbar></Navbar>
-        <h2>Productos de limpieza para el hogar</h2>
+      <Navbar />
+        <ItemListContainer greeting= "Los mejores productos para la limpieza del hogar!!!" />
     </div>
   );
 }
