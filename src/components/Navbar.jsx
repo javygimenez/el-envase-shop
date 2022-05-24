@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartWidget from './CartWidget';
+import CartWidget from './cartWidget/CartWidget';
 import logo from '../assets/logo_el_envase.png';
 
 const Navbar = () => {
