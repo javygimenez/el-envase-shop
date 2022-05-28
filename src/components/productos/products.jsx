@@ -112,10 +112,10 @@ const products =
 
     {
         id: 12,
-        name: "Detergente Cif Desengente",        
-        stock:100,
+        name: "Detergente Cif Desengrasante",        
+        stock:10,
         price: 175,
-        description: "CIF evoluciono y trae su mejor fórmula: ahora más concentrada garantizando un máximo rendimiento.",        
+        description: "El clásico detergente CIF evolucionó y trae su mejor fórmula: ahora más concentrada, garantizando un máximo rendimiento y alto poder de limpieza.",        
         capacity: "300ml",
         img: ['https://jumboargentina.vtexassets.com/arquivos/ids/652743-1200-auto?v=637601020913670000&width=1200&height=auto&aspect=true']        
     }
