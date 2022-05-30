@@ -6,7 +6,7 @@ const ItemList = ({ articulos }) => {
         <>
         <h3>Elija su producto:</h3>
         <div className='d-flex justify-content-between flex-wrap'>            
-            {articulos.map((producto) => <Item key={producto.id} producto={producto}/>)}
+            {articulos.map((producto) => <Item key={producto.id} id={producto.id} producto={producto}/>)}
         </div>
         </>
     )
