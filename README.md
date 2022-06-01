@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Proyecto: *EL ENVASE*
+Proyecto creado para el curso de **React Js** de la academia [Coderhouse](https://www.coderhouse.com/) dictado por el profesor **Alex Marin Mendez** y bajo la tutoría de **José Armando Pérez Pérez.** Este curso es el tercer nivel en la carrera de programación **Full Stack Developer.**
+
+### Descripción del proyecto:
+Aplicación SPA de un e-commerce de productos de limpieza estructurada por componentes mediante Javascript, JS y ES6.
+
+### Estructura:
+Está compuesta por una vista principal, compuesta por un header (el cual se encuentra en todas las vistas) con el logo del negocio y su nombre. Los mismos son lick de navegación que devuelven a la vista principal. También en el header se colocó un ícono de carrito de compras con un contador y botones de navegación que conducen a una nueva vista, dividiendo a los productos por categorías.  
+En el body se encuentan todos los productos separados en cards, con su descripción, un contador con botones para agregar o quitarlo al carrito y un botón para individualizar el producto en una nueva vista, la cual muestra una imágen, su nombre, precio, stock y detalle. También tiene su contador con botones para agregar o quitar el producto al carrito de compras.
+
+![el-envase](https://user-images.githubusercontent.com/98334330/171356997-fa6012fe-4316-4918-9e69-527c9347c404.gif)
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
