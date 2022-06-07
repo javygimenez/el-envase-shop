@@ -7,15 +7,15 @@ import { useParams } from 'react-router-dom';
 
 
 const ItemDetailContainer = ({greeting}) => {
-    const [articulos, setArticulos] = useState ([]);
+    const [dato, setDato] = useState ({});
     const [inicio, setInicio] = useState (false);
-    const { id } = useParams ();
+    const { idItem } = useParams ();
      
 
     useEffect(() => {
         setInicio(true)        
-        customFetch(2000, products.find(item => item.id === parseInt(id)))
-        .then(result => setArticulos(result))
+        customFetch(2000, products.find(item => item.id === parseInt(idItem)))
+        .then(result => setDato(result))
         .catch(err => console.log(err))
         .finally(()=> setInicio(false))
     }, []);
@@ -24,7 +24,7 @@ const ItemDetailContainer = ({greeting}) => {
     return(
         <div>
         <h2>{greeting}</h2>
-        { inicio ? <h3>aguantaaa...!</h3> : <ItemDetail articulos={articulos}/> }      
+        { inicio ? <h3>aguantaaa...!</h3> : <ItemDetail item={dato}/> }      
         </div>
     );
 

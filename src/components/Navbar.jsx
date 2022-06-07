@@ -6,14 +6,9 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container-fluid">
-        {/* <a className="navbar-brand" href="#">
-          <img src={logo} alt="" width="80" height="80"></img>
-        </a> */}
-
+      <div className="container-fluid">      
         <Link to='/' className="navbar-brand"><img src={logo} alt="" width="80" height="80"></img></Link>
-        <Link to='/' className="navbar-brand"><h1>EL ENVASE</h1></Link>
-        {/* <a className="navbar-brand" href="#"><h1>EL ENVASE</h1></a> */}
+        <Link to='/' className="navbar-brand"><h1>EL ENVASE</h1></Link>        
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -26,8 +21,10 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>     
+      <div>
+        <Link to='/cart'>     
         <CartWidget />
+        </Link>
       </div>
     </nav>
   );
