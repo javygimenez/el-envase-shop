@@ -18,18 +18,7 @@ const CartContextProvider = ({children}) => {
                     qtyItem: qty
                 }
         ])
-        : found.qtyItem += qty;
-        // : setCartList([
-        //     found.qtyItem += qty
-            // found.qtyItem += qty
-            // // {
-                // idItem: item.id,
-                // imgItem: item.img[0],
-                // nameItem: item.name,
-                // costItem: item.price,
-                // qtyItem: qty
-            // }
-    // ]);
+        : found.qtyItem += qty;    
     }
 
 
