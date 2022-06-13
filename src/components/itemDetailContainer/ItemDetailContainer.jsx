@@ -18,7 +18,7 @@ const ItemDetailContainer = ({greeting}) => {
         .then(result => setDato(result))
         .catch(err => console.log(err))
         .finally(()=> setInicio(false))
-    }, []);
+    }, [idItem]);
 
 
     return(

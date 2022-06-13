@@ -19,6 +19,17 @@ const CartContextProvider = ({children}) => {
                 }
         ])
         : found.qtyItem += qty;
+        // : setCartList([
+        //     found.qtyItem += qty
+            // found.qtyItem += qty
+            // // {
+                // idItem: item.id,
+                // imgItem: item.img[0],
+                // nameItem: item.name,
+                // costItem: item.price,
+                // qtyItem: qty
+            // }
+    // ]);
     }
 
 
@@ -32,9 +43,43 @@ const CartContextProvider = ({children}) => {
         setCartList(result);
     }
 
+    
+    const cantidadCarrito = () => {
+        
+        let cantidadItems = cartList.map(item =>item.qtyItem).reduce((prev, curr) => prev + curr,0)        
+        return (cantidadItems)
+    }
+    
+
+    
+    const precioPorCantidad = (idItem) => {
+        let index = cartList.map(item => item.idItem).indexOf(idItem);
+        return cartList[index].costItem * cartList[index].qtyItem;
+    }
+
+
+
+    const subTotal = () => {
+        let totalPerItem = cartList.map(item => precioPorCantidad(item.idItem));
+        return totalPerItem.reduce((previousValue, currentValue) => previousValue + currentValue, 0);
+    }
+
+
+
+    const calcIva = () => {
+        return subTotal() * 0.21;
+    }
+
+
+
+    const total = () => {
+        return subTotal() - calcIva();
+    }
+    
+
 
     return(
-        <CartContext.Provider value={{cartList, addToCart, deleteItem, removeList}}>
+        <CartContext.Provider value={{cartList, addToCart, deleteItem, removeList, cantidadCarrito, precioPorCantidad, subTotal, calcIva, total}}>
             {children}
         </CartContext.Provider>
     )
