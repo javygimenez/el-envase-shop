@@ -23,6 +23,7 @@ const Cart = () =>{
                 <div className='row pt-5' key={item.idItem}>
                     <div className='col-md-5'>
                         <img className='card-img-top' style={{width:'10rem'}} src={item.imgItem} alt={item.nameItem} />                
+                        {/* <img src={item.imgItem} alt={item.nameItem}/>                 */}
                     </div>
                     <div className='card-text col-md-5'>
                         <p>Producto: {item.nameItem}</p>

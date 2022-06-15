@@ -14,10 +14,10 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link to='/category/100' className="nav-link" aria-current="page" href="#">JABÓN</Link>
-            <Link to='/category/200' className="nav-link">SUAVIZANTE</Link>
-            <Link to='/category/300' className="nav-link">LAVANDINA</Link>
-            <Link to='/category/400' className="nav-link">DETERGENTE</Link>
+            <Link to='/category/jabon' className="nav-link" aria-current="page" href="#">JABÓN</Link>
+            <Link to='/category/suavizante' className="nav-link">SUAVIZANTE</Link>
+            <Link to='/category/lavandina' className="nav-link">LAVANDINA</Link>
+            <Link to='/category/detergente' className="nav-link">DETERGENTE</Link>
           </div>
         </div>
       </div>

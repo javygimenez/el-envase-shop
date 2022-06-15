@@ -8,17 +8,19 @@ const CartContextProvider = ({children}) => {
 
     const addToCart = (item, qty) => {
         const found = cartList.find(product => product.idItem === item.id);       
-        found === undefined
-        ? setCartList([...cartList,
-                {
-                    idItem: item.id,
-                    imgItem: item.img[0],
-                    nameItem: item.name,
-                    costItem: item.price,
-                    qtyItem: qty
-                }
-        ])
-        : found.qtyItem += qty;    
+        if (found === undefined) { 
+            setCartList([...cartList,
+                   {
+                       idItem: item.id,
+                       imgItem: item.img,
+                       nameItem: item.name,
+                       costItem: item.price,
+                       qtyItem: qty
+                   }
+           ]);
+           } else {found.qtyItem += qty;
+           setCartList([...cartList]);
+           }    
     }
 
 
@@ -28,7 +30,7 @@ const CartContextProvider = ({children}) => {
 
 
     const deleteItem = (id) => {
-        let result = cartList.filter(item => item.idItem != id);
+        let result = cartList.filter(item => item.idItem !== id);
         setCartList(result);
     }
 
