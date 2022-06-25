@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/el-envase-shop/static/css/main.0b4e74b4.css",
+    "main.js": "/el-envase-shop/static/js/main.568b279b.js",
+    "index.html": "/el-envase-shop/index.html",
+    "main.0b4e74b4.css.map": "/el-envase-shop/static/css/main.0b4e74b4.css.map",
+    "main.568b279b.js.map": "/el-envase-shop/static/js/main.568b279b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e74b4.css",
+    "static/js/main.568b279b.js"
+  ]
+}
